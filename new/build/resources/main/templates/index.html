@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<p th:text="'안녕하세요' + ${data}">안녕하세요 손님</p>
+
+<script>
+function nameclick(){
+    name = prompt("이름을 입력해주세요");
+    console.log("1");
+    location.href = "/hello-mvc?name="+name;
+  }
+</script>
+<button onclick="nameclick()">이름 입력하고 접속하기</button>
+
+</body>
+</html>
